@@ -6,20 +6,25 @@ import { MoviesService } from 'src/app/services/movies.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   object: any = {};
   constructor(private moviesService: MoviesService) {
     this.moviesService.getNew().subscribe((data) => {
+      console.log(data)} )
 
-      console.log(data);
-      console.log("que pollas")
-    },((err) => { console.log("error")}) )
-  }
+    this.moviesService.getPopular().subscribe((data) => {
+      console.log(data)} )
 
-  ngOnInit(): void {
+    this.moviesService.getComedy().subscribe((data) => {
+      console.log(data)} )
+    }
 
-  }
+    }
 
 
 
-}
+
+
+
+
+

@@ -12,6 +12,8 @@ import { RouterModule } from "@angular/router";
 
 import { HttpClientModule } from "@angular/common/http";
 
+import { DatePipe } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { HttpClientModule } from "@angular/common/http";
     RouterModule.forRoot(ROUTES),
     HttpClientModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
