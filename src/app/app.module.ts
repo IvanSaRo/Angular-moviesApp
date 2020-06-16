@@ -13,12 +13,18 @@ import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 
 import { DatePipe } from '@angular/common';
+import { FilmImagePipe } from './pipes/film-image.pipe';
+import { GaleryComponent } from './components/home/galery.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FilmImagePipe,
+    GaleryComponent,
+
   ],
   imports: [
     BrowserModule,

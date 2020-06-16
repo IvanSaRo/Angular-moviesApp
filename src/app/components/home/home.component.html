@@ -1,1 +1,31 @@
-<p>home works!</p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">MoviesApp</h1>
+    <p class="lead">Una base de datos de cine</p>
+  </div>
+</div>
+
+<div class="container">
+  <br>
+
+
+
+  <app-galery [films]="onCinema | slice:0:6"
+              title="Películas en cartelera"
+  ></app-galery>
+
+
+
+  <app-galery [films]="popular | slice:0:6"
+              title="Las más populares"
+  ></app-galery>
+
+
+
+  <app-galery [films]="comedy | slice:0:6"
+              title="Selección de comedias"
+  ></app-galery>
+
+
+</div>
+
