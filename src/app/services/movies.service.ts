@@ -59,4 +59,13 @@ constructor(private http: HttpClient, private datePipe: DatePipe) {
       map((data) => data["results"])
       );
   }
+
+  search(input: string, typeSearch: string){
+
+    let query = `/search/${typeSearch}?query=${input}&include_adult=false&api_key=`;
+
+    return this.sendQuery(query).pipe(
+      map((data) => data["results"])
+    );
+  }
 }

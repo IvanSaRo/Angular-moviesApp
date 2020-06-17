@@ -12,6 +12,7 @@ export class HomeComponent {
   comedy: any;
 
 
+
   constructor(private moviesService: MoviesService) {
     this.moviesService.getNew()
         .subscribe((data) => this.onCinema = data)
@@ -19,8 +20,10 @@ export class HomeComponent {
     this.moviesService.getPopular()
         .subscribe((data) => this.popular = data)
 
-    this.moviesService.getComedy().subscribe((data) => {this.comedy = data; console.log(data)})
-    }
+    this.moviesService.getComedy().subscribe((data) => this.comedy = data)
+
+
+  }
 
     }
 

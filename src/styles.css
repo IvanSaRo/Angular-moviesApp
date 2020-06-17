@@ -1,3 +1,10 @@
+*{
+  outline: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
 body{
   padding-bottom: 200px;
 }

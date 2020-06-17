@@ -1,1 +1,25 @@
-<p>search works!</p>
+<div class="input-group container mt-3">
+  <input
+  #term
+  type="text"
+  class="form-control"
+  placeholder="Buscar película"
+  (keyup.enter)="buscar(term.value)"
+/>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  value="peliculas">Tipo de búsqueda</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" (click)="typeOfSearch('movie')">Películas</a>
+
+      <a class="dropdown-item" (click)="typeOfSearch('tv')">Serie TV</a>
+
+    </div>
+  </div>
+</div>
+
+<app-galery [films]="searched | slice:0:6"
+              title="Resultado de la busqueda"
+  ></app-galery>
+
+
+
