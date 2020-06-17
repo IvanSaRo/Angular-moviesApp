@@ -15,6 +15,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { DatePipe } from '@angular/common';
 import { FilmImagePipe } from './pipes/film-image.pipe';
 import { GaleryComponent } from './components/home/galery.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { GaleryComponent } from './components/home/galery.component';
     NavbarComponent,
     FilmImagePipe,
     GaleryComponent,
+    SearchComponent,
 
   ],
   imports: [
