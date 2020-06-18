@@ -12,10 +12,14 @@ import { RouterModule } from "@angular/router";
 
 import { HttpClientModule } from "@angular/common/http";
 
-import { DatePipe } from '@angular/common';
-import { FilmImagePipe } from './pipes/film-image.pipe';
 import { GaleryComponent } from './components/home/galery.component';
 import { SearchComponent } from './components/search/search.component';
+import { CardsComponent } from './components/search/cards.component';
+
+import { TitleOkPipe } from './pipes/title-ok.pipe';
+import { FilmImagePipe } from './pipes/film-image.pipe';
+import { DatePipe } from '@angular/common';
+
 
 
 @NgModule({
@@ -26,6 +30,9 @@ import { SearchComponent } from './components/search/search.component';
     FilmImagePipe,
     GaleryComponent,
     SearchComponent,
+    CardsComponent,
+    TitleOkPipe,
+
 
   ],
   imports: [

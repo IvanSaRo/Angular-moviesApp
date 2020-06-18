@@ -28,7 +28,7 @@ export class SearchComponent implements OnInit {
     if (!word) return;
 
     this.moviesService.search(word, this.typeSearch)
-        .subscribe(data => this.searched = data)
+        .subscribe(data => {this.searched = data; console.log(data)})
 
   }
 

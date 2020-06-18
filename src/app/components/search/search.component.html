@@ -17,9 +17,13 @@
   </div>
 </div>
 
-<app-galery [films]="searched | slice:0:6"
+<!-- <app-galery [films]="searched | slice:0:6"
               title="Resultado de la busqueda"
-  ></app-galery>
+  ></app-galery> -->
+
+  <div class="mt-3 container">
+    <app-cards [films]="searched"></app-cards>
+  </div>
 
 
 
