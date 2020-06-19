@@ -20,6 +20,10 @@ import { TitleOkPipe } from './pipes/title-ok.pipe';
 import { FilmImagePipe } from './pipes/film-image.pipe';
 import { DatePipe } from '@angular/common';
 
+import { FormsModule }   from '@angular/forms';
+import { MovieComponent } from './components/movie/movie.component';
+
+
 
 
 @NgModule({
@@ -32,6 +36,9 @@ import { DatePipe } from '@angular/common';
     SearchComponent,
     CardsComponent,
     TitleOkPipe,
+    MovieComponent,
+
+
 
 
   ],
@@ -39,7 +46,8 @@ import { DatePipe } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]

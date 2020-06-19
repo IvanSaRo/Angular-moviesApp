@@ -13,6 +13,10 @@ export const ROUTES = [
     component: SearchComponent,
   },
   {
+    path: "search/:text",
+    component: SearchComponent,
+  },
+  {
     path: "",
     pathMatch: "full",
     redirectTo: "home",

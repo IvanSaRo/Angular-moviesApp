@@ -3,15 +3,13 @@
   <div  *ngFor="let peli of peliculas; let i = index">
     <div class="card ml-2" style="width: 16rem;">
 
-        <div [ngStyle]="{ 'background-image': 'url( '+ ( peli | filmImage) +' )'  }"
-             class="div-pic-1"
-        ></div>
+        <img [src]="peli | filmImage"  class="div-pic-1" [alt]="peli | titleOk">
 
 
       <div class="card-body">
         <h5 class="badge badge-pill badge-primary">{{peli | titleOk | slice:0:29}}</h5>
-        <p class="card-text">{{peli.overview | slice:0:80}} ...</p>
-        <a href="#" class="btn btn-primary">Leer mas</a>
+        <p class="card-text">{{peli.overview | slice:0:200}} ...</p>
+        <a href="#" class="btn btn-outline-primary btn-block">Leer mas</a>
       </div>
     </div>
 
