@@ -18,6 +18,7 @@ data1 = new Date();
 data2 = new Date();
 
 
+
 constructor(private http: HttpClient, private datePipe: DatePipe) {
 
 
@@ -67,5 +68,13 @@ constructor(private http: HttpClient, private datePipe: DatePipe) {
     return this.sendQuery(query).pipe(
       map((data) => data["results"])
     );
+  }
+
+  getMovie(id: any){
+    let query = `/movie/${id}?api_key=`
+
+    return this.sendQuery(query)
+
+
   }
 }

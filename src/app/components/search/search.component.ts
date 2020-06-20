@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   ]
 })
 export class SearchComponent implements OnInit {
-  searched: any;
+ public searched: any;
   typeSearch: string;
 
 

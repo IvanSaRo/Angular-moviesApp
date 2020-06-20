@@ -12,20 +12,23 @@
   <div class="col-sm-6">
 
     <div class="row">
-      <div class="col-md-12 div-pic-1"
+      <div class="col-md-12 div-pic-1 puntero img-thumbnail img-fluid"
+          [routerLink]="['/movie', peliculas[0].id, 'home']"
           [ngStyle]="{ 'background-image': 'url( '+ ( peliculas[0] | filmImage) +' )'  }">
-          <label for="" class="badge badge-pill badge-primary">{{peliculas[0] | titleOk | slice:0:19}}</label>
+          <label for="" class="badge badge-pill badge-primary">{{peliculas[0] | titleOk | slice:0:30}}</label>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-6 div-pic-2"
+      <div class="col-sm-6 div-pic-2 puntero img-thumbnail img-fluid"
+            [routerLink]="['/movie', peliculas[1].id, 'home']"
             [ngStyle]="{ 'background-image': 'url( '+ ( peliculas[1] | filmImage) +' )'  }">
-            <label for="" class="badge badge-pill badge-primary">{{peliculas[1] | titleOk | slice:0:19}}</label>
+            <label for="" class="badge badge-pill badge-primary">{{peliculas[1] | titleOk | slice:0:30}}</label>
       </div>
-      <div class="col-sm-6 div-pic-2"
+      <div class="col-sm-6 div-pic-2 puntero img-thumbnail img-fluid"
+            [routerLink]="['/movie', peliculas[2].id, 'home']"
             [ngStyle]="{ 'background-image': 'url( '+ ( peliculas[2] | filmImage) +' )'  }">
-            <label for="" class="badge badge-pill badge-primary">{{peliculas[2] | titleOk | slice:0:19}}</label>
+            <label for="" class="badge badge-pill badge-primary">{{peliculas[2] | titleOk | slice:0:30}}</label>
       </div>
     </div>
 
@@ -35,20 +38,23 @@
 
 
     <div class="row">
-      <div class="col-sm-6 div-pic-2"
+      <div class="col-sm-6 div-pic-2 puntero img-thumbnail img-fluid"
+            [routerLink]="['/movie', peliculas[3].id, 'home']"
             [ngStyle]="{ 'background-image': 'url( '+ ( peliculas[3] | filmImage) +' )'  }">
-            <label for="" class="badge badge-pill badge-primary">{{peliculas[3] | titleOk | slice:0:19}}</label>
+            <label for="" class="badge badge-pill badge-primary">{{peliculas[3] | titleOk | slice:0:30}}</label>
       </div>
-      <div class="col-sm-6 div-pic-2"
+      <div class="col-sm-6 div-pic-2 puntero img-thumbnail img-fluid"
+            [routerLink]="['/movie', peliculas[4].id, 'home']"
             [ngStyle]="{ 'background-image': 'url( '+ ( peliculas[4] | filmImage) +' )'  }">
-            <label for="" class="badge badge-pill badge-primary">{{peliculas[4] | titleOk | slice:0:19}}</label>
+            <label for="" class="badge badge-pill badge-primary">{{peliculas[4] | titleOk | slice:0:30}}</label>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12 div-pic-1"
+      <div class="col-md-12 div-pic-1 puntero img-thumbnail img-fluid"
+            [routerLink]="['/movie', peliculas[5].id, 'home']"
             [ngStyle]="{ 'background-image': 'url( '+ ( peliculas[5] | filmImage) +' )'  }">
-            <label for="" class="badge badge-pill badge-primary">{{peliculas[5] | titleOk | slice:0:19}}</label>
+            <label for="" class="badge badge-pill badge-primary">{{peliculas[5] | titleOk | slice:0:30}}</label>
     </div>
   </div>
 

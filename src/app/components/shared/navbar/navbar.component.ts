@@ -17,6 +17,7 @@ console.log("pasa");
   }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -1,1 +1,32 @@
-<p>movie works!</p>
+<div class="container main-container animated fadeIn fast"
+     *ngIf="movie"
+>
+
+<h1>{{movie | titleOk}}</h1>
+<div class="row mt-4">
+ <div class="col-md-5">
+     <img [src]="movie | filmImage:true" alt={{movie.title}}
+    class="img-thumbnail img-fluid">
+
+  </div>
+  <div class="col-md-7">
+    Sinopsis
+    <p class="mt-3">
+      {{movie.overview}}
+    </p>
+    <p>
+      {{movie.tagline}}
+    </p>
+    <p>
+      Rating: <span class="badge badge-primary">{{movie.vote_average | number:".2-2"}}</span>
+    </p>
+    <div class="row animated fadeIn fast">
+
+    <p *ngFor="let genero of movie.genres" class="ml-3">
+      <span class="badge badge-success">{{genero.name}}</span>
+    </p>
+    </div>
+  </div>
+</div>
+</div>
+

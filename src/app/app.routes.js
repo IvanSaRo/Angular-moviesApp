@@ -1,6 +1,7 @@
 
 import { HomeComponent } from "./components/home/home.component";
 import { SearchComponent } from "./components/search/search.component";
+import { MovieComponent} from "./components/movie/movie.component"
 
 
 export const ROUTES = [
@@ -15,6 +16,10 @@ export const ROUTES = [
   {
     path: "search/:text",
     component: SearchComponent,
+  },
+  {
+    path: "movie/:id/:page",
+    component: MovieComponent,
   },
   {
     path: "",

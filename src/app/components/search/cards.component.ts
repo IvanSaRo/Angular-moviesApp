@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -6,11 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: [
   ]
 })
-export class CardsComponent implements OnInit {
+export class CardsComponent {
   @Input("films")peliculas;
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  films: Array<Object>;
+  constructor() {
+
+   }
+
 
 }
