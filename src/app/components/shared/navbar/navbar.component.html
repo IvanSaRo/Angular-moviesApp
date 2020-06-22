@@ -1,35 +1,37 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand"> Navbar</a>
+  <a class="navbar-brand puntero">
+    <img src="../../../../assets/img/cinema.jpg" alt="cinema"  width="40" height="30px" [routerLink]="['home']">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item" routerLinkActive="active">
+      <li class="nav-item puntero" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['home']">Home
           <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
+      <li class="nav-item puntero" routerLinkActive="active">
         <a class="nav-link"
            [routerLink]="['search']"
-           >Buscar</a>
+           >Buscar series</a>
       </li>
 
 
     </ul>
     <form class="form-inline my-2 my-lg-0"
-          (ngSubmit)="searchPerson(search.value)"
+          (ngSubmit)="searchNav(search.value)"
           novalidate
 
     >
       <input class="form-control mr-sm-2"
              type="text"
-             placeholder="Buscar"
+             placeholder="Películas"
 
              #search
              >
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
     </form>
   </div>
 </nav>

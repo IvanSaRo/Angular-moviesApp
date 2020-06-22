@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
   searchPerson(text: any){
     if (text.length === 0) return
-console.log("pasa");
+
      this.router.navigate(["/search", text])
   }
 

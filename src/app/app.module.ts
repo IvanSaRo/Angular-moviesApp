@@ -22,6 +22,11 @@ import { DatePipe } from '@angular/common';
 
 import { FormsModule }   from '@angular/forms';
 import { MovieComponent } from './components/movie/movie.component';
+import { LoadingComponent } from './shared/loading/loading.component';
+
+
+
+
 
 
 
@@ -37,6 +42,8 @@ import { MovieComponent } from './components/movie/movie.component';
     CardsComponent,
     TitleOkPipe,
     MovieComponent,
+    LoadingComponent,
+
 
 
 

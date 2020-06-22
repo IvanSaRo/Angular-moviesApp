@@ -18,7 +18,6 @@ data1 = new Date();
 data2 = new Date();
 
 
-
 constructor(private http: HttpClient, private datePipe: DatePipe) {
 
 
@@ -69,6 +68,7 @@ constructor(private http: HttpClient, private datePipe: DatePipe) {
       map((data) => data["results"])
     );
   }
+
 
   getMovie(id: any){
     let query = `/movie/${id}?api_key=`

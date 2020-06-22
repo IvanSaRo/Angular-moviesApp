@@ -1,25 +1,27 @@
-<h3 class="text-center">Resultados de la búsqueda</h3>
-<div class="mt-4 row card-columns">
 
-  <div *ngFor="let peli of peliculas" >
-    <div class="card ml-2" style="width: 16rem;"
-    [routerLink]="['/movie', peli.id, 'search']"
-    >
-
-        <img [src]="peli | filmImage:true"
-             class="div-pic-1 img-thumbnail img-fluid puntero"
-             [alt]="peli | titleOk">
+<div class="row animated fadeIn fast">
+  <div class="mt-4 row card-columns">
 
 
+      <div class="card ml-2" style="width: 16rem;"
+           *ngFor="let peli of peliculas"
+      >
 
-      <div class="card-body">
-        <h5 class="badge badge-pill badge-primary">{{peli | titleOk | slice:0:29}}</h5>
-        <p class="card-text">{{peli.overview | slice:0:200}} ...</p>
-        <a href="#" class="btn btn-outline-primary btn-block puntero"
-           [routerLink]="['/movie', peli.id, 'search']"
-        >Leer mas</a>
+          <img [src]="peli | filmImage:true"
+               class="div-pic-1 img-thumbnail img-fluid"
+               [alt]="peli | titleOk">
+
+
+
+        <div class="card-body">
+          <h5 class="badge badge-pill badge-primary">{{peli | titleOk | slice:0:38}}</h5>
+          <p class="card-text">{{peli.overview | slice:0:200}} ...</p>
+          <a href="#" class="btn btn-outline-primary btn-block puntero"
+             [routerLink]="['/movie', peli.id, 'search']"
+          >Leer mas</a>
+        </div>
       </div>
-    </div>
+
 
 
 

@@ -13,14 +13,18 @@ export class HomeComponent {
 
 
 
+
   constructor(private moviesService: MoviesService) {
+
+
     this.moviesService.getNew()
         .subscribe((data) => this.onCinema = data)
 
     this.moviesService.getPopular()
         .subscribe((data) => this.popular = data)
 
-    this.moviesService.getComedy().subscribe((data) => this.comedy = data)
+    this.moviesService.getComedy()
+        .subscribe((data) => this.comedy = data)
 
 
   }

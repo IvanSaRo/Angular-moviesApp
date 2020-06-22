@@ -1,5 +1,10 @@
 *{
   outline: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+.piedra{
+  font-family: 'Piedra', cursive;
 }
 
 a:hover {
@@ -17,7 +22,11 @@ body{
 .puntero{
   cursor: pointer;
 }
+ img{
+   max-width: 100%;
+   height: auto;
 
+ }
 
 .div-pic-1{
   width: 100%;

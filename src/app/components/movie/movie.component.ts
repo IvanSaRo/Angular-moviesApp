@@ -10,10 +10,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MovieComponent {
   movie: any;
+  backTo = "";
   constructor(private moviesService: MoviesService, public activated: ActivatedRoute) {
 
 
     this.activated.params.subscribe(params => {
+
+      this.backTo = params["page"]
 
       this.moviesService.getMovie(params["id"])
             .subscribe(movie => {
