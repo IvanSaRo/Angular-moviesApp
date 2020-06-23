@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  searchPerson(text: any){
+  searchNav(text: any){
     if (text.length === 0) return
 
      this.router.navigate(["/search", text])
